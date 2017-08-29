@@ -10,6 +10,6 @@ export class AppComponent {
         translate.addLangs(['de', 'ru', 'en']);
         translate.setDefaultLang('de');
         const browserLang = translate.getBrowserLang();
-        translate.use(browserLang.match(/de|en|eu/) ? browserLang : 'de');
+        translate.use(browserLang.match(/de|ru|en/) ? browserLang : 'de');
     }
 }
